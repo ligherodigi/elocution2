@@ -1,0 +1,119 @@
+body{
+    margin:0px;
+    padding: 0px;
+    background-color: #f5f1e5;
+}
+p{
+    margin: 3px;
+}
+
+#profilepic {
+    height: 700px;
+    width:300px;
+    background-color: rgb(253, 251, 251);
+    border: 1px solid lightslategray;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius: 15x;
+    margin-top: 55px;
+    margin-left: 70px;
+    float: left;
+}
+
+.holderButton{
+    margin-left: 50px;
+    margin-top: 4px;
+}
+.holder {
+    border: 1px solid #2A2C2B;
+    width: 180px;
+    height: 150px;
+    margin-left:58px;
+    margin-top: 50px;
+    
+}
+
+#main {
+
+    width: 700px;
+    height: 480px;
+    border: 1px solid lightslategray;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius: 20px;
+    margin: 55px 30px;
+    margin-left: 150px;
+    float: left;
+    background-color: white;
+}
+.button{
+    background-color: #2A2C2B;
+    color: white;
+    width: 540px;
+    height: 27px;
+    border-radius: 8px;
+    border-style: none;
+    
+}
+.button-two{
+    background-color: #2A2C2B;
+    color: white;
+    width:350px;
+    height: 27px;
+    border-radius: 8px;
+    border-style: none;
+      
+}
+input[type=text] {
+    
+    border: none;
+    border-bottom: 2px solid#5b6b6a;
+}
+
+input[type=email] {
+    border: none;
+    border-bottom: 2px solid#5b6b6a;
+}
+
+input[type=text]:focus {
+ border-color:#5b6b6a;  
+
+}
+
+.box {
+    height: 20px;
+}
+
+#form {
+   
+    padding-left: 80px;
+    padding-top: 35px;
+    
+
+}
+
+
+
+#contact {
+
+    width: 700px;
+    height: 350px;
+    border: 1px solid lightslategray;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius: 0px;
+    margin-left: 145px;
+    margin-bottom:50px;
+    float: left;
+    background-color: white;
+}
+
+#formcontact {
+    padding-left: 80px;
+    padding-top: 35px
+
+
+}

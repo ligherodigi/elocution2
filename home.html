@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <img src="images/elocution_logo.png" width="100" height="100" />        
+        </div>
+        <div id="caption">
+            <h2>THE ELOCUTION STUDIO</h2>
+            <h4>The Best Elocution Coaches in Nigeria</h4>
+        </div>
+        <div id="navbar">
+            <nav>
+                <ul>
+                    <a href="#">
+                        <li>Home</li>
+                    </a>
+                    <a href="#">
+                        <li>About</li>
+                    </a>
+                    <a href="#">
+                        <li>Resources</li>
+                    </a>
+                    <a href="#">
+                        <li>Contacts</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- <div id="header">
+        <div id="logo"><img src="images/elocution_logo.png" width="100" height="100" />
+            <div id="logocap">
+                    <h2>THE ELOCUTION STUDIO</h2>
+                    <h4 style="margin-top: -15px; margin-left: 10px;" >The Best Elocution Coaches in Nigeria</h4>
+                
+            </div>
+            <div id="nav-bar">
+                <nav>
+                    <ul>
+                        <a href="#">
+                            <li>Home</li>
+                        </a>
+                        <a href="#">
+                            <li>About</li>
+                        </a>
+                        <a href="#">
+                            <li>Resources</li>
+                        </a>
+                        <a href="#">
+                            <li>Contacts</li>
+                        </a>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+    </div> -->
+
+    <!-- Carousel Slider -->
+    <section>
+
+        <style>
+            /* * {
+                box-sizing: border-box;
+            }
+        
+            body {
+                font-family: Verdana, sans-serif;
+            } */
+        
+            .mySlides {
+                display: none;
+            }
+        
+            img {
+                vertical-align: middle;
+            }
+        
+            /* Slideshow container */
+            .slideshow-container {
+                max-width: 100%;
+                position: relative;
+                margin: auto;
+            }
+        
+            /* Caption text */
+            .text {
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+            }
+        
+            /* Number text (1/3 etc) */
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+        
+            /* The dots/bullets/indicators */
+            .dot {
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+            }
+        
+            .active {
+                background-color: #717171;
+            }
+        
+            /* Fading animation */
+            .fade {
+                -webkit-animation-name: fade;
+                -webkit-animation-duration: 1.5s;
+                animation-name: fade;
+                animation-duration: 1.5s;
+            }
+        
+            @-webkit-keyframes fade {
+                from {
+                    opacity: .4
+                }
+        
+                to {
+                    opacity: 1
+                }
+            }
+        
+            @keyframes fade {
+                from {
+                    opacity: .4
+                }
+        
+                to {
+                    opacity: 1
+                }
+            }
+        
+            /* On smaller screens, decrease text size */
+            @media only screen and (max-width: 300px) {
+                .text {
+                    font-size: 11px
+                }
+            }
+        </style>
+       
+        
+        <!-- <h2>Automatic Slideshow</h2>
+        <p>Change image every 2 seconds:</p> -->
+    
+        <div class="slideshow-container">
+    
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">1 / 3</div> -->
+                <img src="images/Banner_one_pro.png" style="width:100%">
+                <!-- <div class="text">Caption Text</div> -->
+            </div>
+    
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">2 / 3</div> -->
+                <img src="images/banner_two_pro.png" style="width:100%">
+                <!-- <div class="text">Caption Two</div> -->
+            </div>
+    
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">3 / 3</div> -->
+                <img src="images/banner_three_pro.png" style="width:100%">
+                <!-- <div class="text">Caption Three</div> -->
+            </div>
+
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">3 / 3</div> -->
+                <img src="images/banner _four_pro.png" style="width:100%">
+                <!-- <div class="text">Caption Three</div> -->
+            </div>
+    
+        </div>
+        <br>
+    
+        <!-- <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div> -->
+    
+        <script>
+            var slideIndex = 0;
+          
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+
+                // var dots = document.getElementsByClassName("dot");
+
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+
+                // for (i = 0; i < dots.length; i++) {
+                //     dots[i].className = dots[i].className.replace(" active", "");
+                // }
+                slides[slideIndex - 1].style.display = "block";
+                // dots[slideIndex - 1].className += " active";
+
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+        
+    </section>
+
+    <!-- <div id="slider">
+        <figure>
+            <img class="slider-img" src="images/Banner_one_pro.png" alt="">
+            <img class="slider-img" src="images/banner_two_pro.png" alt="">
+            <img class="slider-img" src="images/banner_three_pro.png" alt="">
+            <img class="slider-img" src="images/banner _four_pro.png" alt="">
+
+        </figure>
+    </div> -->
+
+    <div id="founder">
+
+        <img src="images/kemi Odukoya.png" class="imgholder" />
+
+        <!-- <div id="imgholder">
+            <img src="images/kemi Odukoya.png" class="imgholder" />
+        </div> -->
+
+        <section class="owner">
+            <h1 class="vbold2" class="text-center">ABOUT THE FOUNDER</h1>
+            Kemi Odukoya is an elocution coach, who is passionate about helping people
+            to use their voices with power and precision. A graduate of The University of Manchester,
+            she is the founder of The Elocution Studio.She believes that in an increasingly globalised world,
+            where more and more people work and study cross-culturally, the ability to speak well,
+            and be understood by anyone, is a vital skill.
+        </section>
+
+    </div>
+
+    <div id="block">
+        <h1 class="text-center"> WE GO THE EXTRA MILE</h1>
+        <p class="text-center">With the Elocution Studio, you can expect results-driven lessons that will bring
+            out the best in you. </p>
+    </div>
+
+
+    <!-- <table class="table">
+        <tr>
+            <td> <img src="images/kids.png" class="kids" /></td>
+
+            <td>
+                <h1 style="text-align: center;">Elocution Lessons for <br> Children and Teens</h1>
+                <h2 style="text-align: center;">TEACH THEM YOUNG</h2>
+
+                <section class="sect">
+                    Despite the best efforts of parents to send their children to good schools and
+                    teach them at home, it is so easy for them to pick up bad grammar and poor pronunciation.
+
+                </section> <br>
+
+                <section class="sect">
+                    With us, children will learn the right way to pronounce the vowel and consonant system of the
+                    English Language,
+                    and improve their intonation. They will become more confident when speaking as a result!
+
+                </section> <br>
+
+                <section class="sect">
+                    Get in touch with us today to find out about our classes for children and teenagers.
+                </section>
+
+
+
+
+            </td>
+
+        </tr>
+
+
+        <tr>
+            <td>
+
+                <h1 style="text-align: center;">TRAINING FOR TEACHERS</h1>
+
+                <section class="sect">
+                    "Teachers plant the seeds of knowledge that lasts a lifetime..."<br>
+
+                    ​One of the biggest complaints we hear from parents, is that their
+                    children are picking up bad speech patterns from school.
+
+                    ​
+
+                </section> <br>
+
+                <section class="sect">
+                    If you own a school, why not enrol your teachers in elocution classes?<br>
+                    It will impact the way your students are taught.
+
+
+                </section> <br>
+
+                <section class="sect">
+                    Make your educators stand out from the crowd. Get in touch
+                    with us today to discuss elocution lessons for your teachers,
+                </section>
+
+
+
+
+            </td>
+
+            <td>
+                <img src="images/teacher_new.png" class="kids" />
+            <td>
+
+
+
+
+        </tr>
+
+        <tr>
+            <td> <img src="images/Corporate.png" class="kids" style="width: 700px; height: 700px;" /></td>
+
+            <td>
+                <h1 style="text-align: center;">CORPORATE TRAINING</h1>
+                <h2 style="text-align: center;">Get a World Class Team</h2>
+
+                <section class="sect">
+                    If you own a business that involves customer engagement, such as a call-centre,<br>hotel,
+                    retail outlet or restaurant, how your staff speak can create a positive or<br> negative impression
+                    of your company.
+
+                    ​
+                </section> <br>
+
+                <section class="sect">
+                    Ensure that your customers are impressed, by booking us for elocution<br> training for your staff.
+                    They will learn important tools to become more<br> effective communicators, able to serve customers
+                    better and improve<br> your bottom line!
+                </section> <br>
+
+
+
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+
+                <h1 style="text-align: center;">TRAINING FOR TEACHERS</h1>
+
+                <section class="sect">
+                    "Teachers plant the seeds of knowledge that lasts a lifetime..."<br>
+
+                    ​One of the biggest complaints we hear from parents, is that their
+                    children are picking up bad speech patterns from school.
+
+                    ​
+
+                </section> <br>
+
+                <section class="sect">
+                    If you own a school, why not enrol your teachers in elocution classes?<br>
+                    It will impact the way your students are taught.
+
+
+                </section> <br>
+
+                <section class="sect">
+                    Make your educators stand out from the crowd. Get in touch
+                    with us today to discuss elocution lessons for your teachers,
+                </section>
+
+
+
+
+            </td>
+
+            <td>
+                <img src="images/teacher_new.png" class="kids" />
+            <td>
+
+
+
+
+        </tr>
+
+
+
+
+    </table> -->
+
+
+    <div class="container-main">
+
+        <div class="column box1">
+            <img src="images/kids.png" class="featured-img" />
+        </div>
+
+        <div class="column box2">
+            <div class="featured-text">
+                <h1 class="text-center">Elocution Lessons for <br> Children and Teens</h1>
+                <h2 class="text-center">Teach Them Young</h2>
+                
+                <p>Despite the best efforts of parents to send their children to good schools and
+                teach them at home, it is so easy for them to pick up bad grammar and poor pronunciation.</p>
+                &nbsp;
+                <p>With us, children will learn the right way to pronounce the vowel and consonant system of the
+                English Language,
+                and improve their intonation. They will become more confident when speaking as a result!</p>
+                &nbsp;
+                <p>Get in touch with us today to find out about our classes for children and teenagers.</p>
+
+                <!-- <section class="sect">
+                    Despite the best efforts of parents to send their children to good schools and
+                    teach them at home, it is so easy for them to pick up bad grammar and poor pronunciation.
+                
+                </section> <br>
+                
+                <section class="sect">
+                    With us, children will learn the right way to pronounce the vowel and consonant system of the
+                    English Language,
+                    and improve their intonation. They will become more confident when speaking as a result!
+                
+                </section> <br>
+                
+                <section class="sect">
+                    Get in touch with us today to find out about our classes for children and teenagers.
+                </section> -->
+            </div>
+        </div>
+
+        <div class="column box3">
+            <div class="featured-text">
+                <h1 class="text-center">TRAINING FOR TEACHERS</h1>
+                <h2 class="text-center">Make Your School Stand Out</h2>
+                
+                <p>"Teachers plant the seeds of knowledge that lasts a lifetime..."</p>
+                &nbsp;
+                <p>​One of the biggest complaints we hear from parents, is that their
+                    children are picking up bad speech patterns from school.</p>
+                &nbsp;
+                <p>If you own a school, why not enrol your teachers in elocution classes?<br>
+                    It will impact the way your students are taught.</p>
+                &nbsp;
+                <p>Make your educators stand out from the crowd. Get in touch
+                    with us today to discuss elocution lessons for your teachers,</p>
+                
+                <!-- <section class="sect">
+                    "Teachers plant the seeds of knowledge that lasts a lifetime..."<br>
+                
+                    ​One of the biggest complaints we hear from parents, is that their
+                    children are picking up bad speech patterns from school.
+                
+                    ​
+                
+                </section> <br>
+                
+                <section class="sect">
+                    If you own a school, why not enrol your teachers in elocution classes?<br>
+                    It will impact the way your students are taught.
+                
+                
+                </section> <br>
+                
+                <section class="sect">
+                    Make your educators stand out from the crowd. Get in touch
+                    with us today to discuss elocution lessons for your teachers,
+                </section> -->
+            </div>
+            
+        </div>
+
+        <div class="column box4">
+            
+            <img src="images/teacher_new.png" class="featured-img" />
+
+        </div>
+
+        <div class="column box5">
+            <img src="images/Corporate.png" class="featured-img"/>
+        </div>
+
+        <div class="column box6">
+            <div class="featured-text">
+                <h1 class="text-center">CORPORATE TRAINING</h1>
+                <h2 class="text-center">Get a World Class Team</h2>
+                
+                <p>If you own a business that involves customer engagement, such as a call-centre, hotel, retail outlet or restaurant,
+                    how
+                    your staff speak can create a positive or negative impression of your company.</p>
+                &nbsp;
+                <p>Ensure that your customers are impressed, by booking us for elocution training for your staff. They will learn
+                    important
+                    tools to become more effective communicators, able to serve customers better and improve your bottom line!</p>
+                &nbsp;
+                <p>Get in touch today to arrange a training.</p>
+                
+                <!-- <section class="sect">
+                    If you own a business that involves customer engagement, such as a call-centre,<br>hotel,
+                    retail outlet or restaurant, how your staff speak can create a positive or<br> negative impression
+                    of your company.
+                
+                    ​
+                </section> <br>
+                
+                <section class="sect">
+                    Ensure that your customers are impressed, by booking us for elocution<br> training for your staff.
+                    They will learn important tools to become more<br> effective communicators, able to serve customers
+                    better and improve<br> your bottom line!
+                </section> <br> -->
+            </div>
+        </div>
+
+        <div class="column box7">
+            <div class="featured-text">
+                <h1 class="text-center">TRAINING FOR TEACHERS</h1>
+                <h2 class="text-center">Make Your School Stand Out</h2>
+            
+                <p>"Teachers plant the seeds of knowledge that lasts a lifetime..."</p>
+                &nbsp;
+                <p>​One of the biggest complaints we hear from parents, is that their
+                    children are picking up bad speech patterns from school.</p>
+                &nbsp;
+                <p>If you own a school, why not enrol your teachers in elocution classes?<br>
+                    It will impact the way your students are taught.</p>
+                &nbsp;
+                <p>Make your educators stand out from the crowd. Get in touch
+                    with us today to discuss elocution lessons for your teachers,</p>
+            
+                <!-- <section class="sect">
+                                "Teachers plant the seeds of knowledge that lasts a lifetime..."<br>
+                            
+                                ​One of the biggest complaints we hear from parents, is that their
+                                children are picking up bad speech patterns from school.
+                            
+                                ​
+                            
+                            </section> <br>
+                            
+                            <section class="sect">
+                                If you own a school, why not enrol your teachers in elocution classes?<br>
+                                It will impact the way your students are taught.
+                            
+                            
+                            </section> <br>
+                            
+                            <section class="sect">
+                                Make your educators stand out from the crowd. Get in touch
+                                with us today to discuss elocution lessons for your teachers,
+                            </section> -->
+            </div>
+        </div>
+
+        <div class="column box8">
+            <img src="images/teacher_new.png" class="featured-img" />
+        </div>
+
+    </div>
+
+
+    <div id="exec">
+
+
+
+    </div>
+
+    <footer>
+        <div class="contact-info">
+            <h1 class="info-head text-center">SCHEDULE A SESSION</h1>
+            <a href="mailto:admin@elocutionstudio.com" class="info-item"><p class="text-center">admin@elocutionstudio.com</p></a>
+            <p class="info-item text-center">09018009475</p>
+
+            <span class="social-links">
+                <a href="https://www.instagram.com/ELOCUTIONSTUDIO/">
+                    <box-icon type="logo" name="facebook-square" color="white" ;></box-icon class="text-center">
+                </a>
+                <a href="https://web.facebook.com/elocutionstudio?_rdc=1&_rdr">
+                    <box-icon type='logo' name='instagram' color="white" ;></box-icon>
+                </a>
+            </span>
+        </div>
+
+        <div class="contact-form">
+
+            <form id="contactForm" method="POST" action="form_process.php">
+                <div class="form-group1">
+                    <div class="formInput1">
+                        <label for="firstName"> FirstName</label>
+                        <input type="text" name="firstName" id="firstName" />
+                    </div>
+                    <div class="formInput2">
+                        <label> Surname</label>
+                        <input type="text" name="surname" id="surname" />
+                    </div>
+                </div>
+                <div class="formInput3">
+                    <label>Email</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <div class="formInput4">
+                    <label>Subject</label>
+                    <input type="text" name="Subject" id="subject" />
+                </div>
+                <div class="formInput5">
+                    <label>Message</label>
+                    <textarea class="summary" name="comment" id="message" rows="5" cols="47"></textarea>
+                </div>
+                <div class="formInput6">
+                    <input type="submit" name="submit" value="Submit" class="form-btn" />
+                </div>
+            
+            </form>
+
+
+
+
+            <!-- <form id="contactForm" method="POST" action="form_process.php">
+                <div class="formItem formInput1">
+                    <label for="firstName"> FisrtName</label>
+                    <input type="text" name="firstName" id="firstName" />
+                </div>
+                <div class="formItem formInput2">
+                    <label> Surname</label>
+                    <input type="text" name="surname" id="surname" />
+                </div>
+                <div class="formItem formInput3">
+                    <label>Email</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <div class="formItem formInput4">
+                    <label>Subject</label>
+                    <input type="text" name="Subject" id="subject" />
+                </div>
+                <div class="formItem formInput5">
+                    <label>Message</label>
+                    <textarea class="summary" name="comment" id="message" rows="5" cols="47"></textarea>
+                </div>
+                <div class="formItem formInput6">
+                    <input type="button" name="submit" value="Submit" class="button-two form-btn" />
+                </div>
+                
+            </form> -->
+        </div>
+    </footer>
+
+    <!-- <footer id="footer">
+        <div id="fmess">
+            <h1>SCHEDULE A SESSION</h1>
+            <p>admin@elocutionstudio.com <br> 09018009475</p>
+        </div>
+
+        <div id="social">
+            <a href="https://www.instagram.com/ELOCUTIONSTUDIO/">
+                <box-icon type="logo" name="facebook-square" color="white" ;></box-icon>
+            </a>
+            <a href="https://web.facebook.com/elocutionstudio?_rdc=1&_rdr">
+                <box-icon type='logo' name='instagram' color="white" ;></box-icon>
+            </a>
+        </div>
+        <div id="contact">
+
+            <form id="formcontact" method="POST" action="form_process.php">
+                <table>
+                    <tr>
+                        <td>
+                            <label> FisrtName</label><br>
+                            <input type="text" name="firstName" />
+                        </td>
+                        <td>
+                            <label> Surname</label><br>
+                            <input type="text" name="surname" />
+                        </td>
+                    </tr>
+                    <td>
+                        <label>Email</label><br>
+                        <input type="email" name="email" />
+                    </td>
+                    <td>
+                        <label>Subject</label><br>
+                        <input type="text" name="Subject" />
+                    </td><br>
+                    <td>
+                        </tr>
+                        <tr>
+                            <td>
+
+
+                            </td>
+                        </tr>
+                </table>
+                <label>Message</label><br>
+                <textarea class="summary" name="comment" rows="5" cols="47"></textarea></p>
+                <input type="button" name="submit" value="Submit" class="button-two" />
+            </form>
+
+        </div>
+
+
+
+
+    </footer> -->
+
+</body>
+
+</html>
